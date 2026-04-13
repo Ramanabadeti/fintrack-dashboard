@@ -1,0 +1,30 @@
+.transaction-list { display: flex; flex-direction: column; gap: 1rem; }
+.list-filters { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.list-filters select { padding: .5rem .75rem; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: .875rem; color: #475569; background: #fff; outline: none; cursor: pointer; }
+.list-filters select:focus { border-color: #10b981; }
+.list-count { margin-left: auto; font-size: .85rem; color: #94a3b8; }
+.list-loading, .list-empty { padding: 3rem; text-align: center; color: #94a3b8; display: flex; align-items: center; justify-content: center; gap: .75rem; background: #fff; border-radius: 12px; }
+.table-wrapper { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.tx-table { width: 100%; border-collapse: collapse; }
+.tx-table th { background: #f8fafc; padding: .75rem 1rem; text-align: left; font-size: .78rem; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid #e2e8f0; }
+.tx-table td { padding: .85rem 1rem; border-bottom: 1px solid #f1f5f9; font-size: .9rem; color: #334155; }
+.tx-table tr:last-child td { border-bottom: none; }
+.tx-table tr:hover td { background: #f8fafc; }
+.tx-date { color: #64748b; white-space: nowrap; }
+.tx-category { background: #f1f5f9; color: #475569; padding: .2rem .6rem; border-radius: 999px; font-size: .8rem; font-weight: 500; }
+.tx-desc { color: #94a3b8; }
+.tx-type { padding: .2rem .6rem; border-radius: 999px; font-size: .78rem; font-weight: 600; }
+.tx-type.income { background: #f0fdf4; color: #16a34a; }
+.tx-type.expense { background: #fef2f2; color: #dc2626; }
+.tx-amount { font-weight: 600; }
+.tx-amount.income { color: #16a34a; }
+.tx-amount.expense { color: #dc2626; }
+.btn-del { background: none; border: none; color: #cbd5e1; cursor: pointer; font-size: .85rem; padding: .25rem .4rem; border-radius: 4px; transition: all .15s; }
+.btn-del:hover { color: #dc2626; background: #fef2f2; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: .75rem; }
+.pagination button { background: #f1f5f9; border: none; padding: .4rem .9rem; border-radius: 6px; font-size: .85rem; color: #475569; cursor: pointer; transition: background .15s; }
+.pagination button:hover:not(:disabled) { background: #e2e8f0; }
+.pagination button:disabled { opacity: .4; cursor: not-allowed; }
+.pagination span { font-size: .85rem; color: #64748b; }
+.spinner { width: 20px; height: 20px; border: 2px solid #e2e8f0; border-top-color: #10b981; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
